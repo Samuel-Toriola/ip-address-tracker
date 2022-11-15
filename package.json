@@ -1,0 +1,19 @@
+{
+  "name": "ip-address-tracker",
+  "version": "1.0.0",
+  "description": "An Intermediate level html, css and js project",
+  "default": "index.html",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html --dist-dir ./dist"
+  },
+  "author": "Toriola Samuel",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel": "^2.8.0"
+  },
+  "dependencies": {
+    "core-js": "^3.26.1",
+    "regenerator-runtime": "^0.13.10"
+  }
+}

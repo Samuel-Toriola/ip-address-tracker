@@ -1,0 +1,219 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Rubik", sans-serif;
+  font-size: 18px;
+}
+body {
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6));
+}
+
+.heading {
+  width: 100%;
+  height: 37vh;
+  background-image: url(images/pattern-bg.png);
+}
+.title {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 30px;
+  font-size: 32px;
+}
+.input__field {
+  position: relative;
+  text-align: center;
+  width: 80%;
+  margin: auto;
+}
+.search {
+  padding: 10px;
+  width: 50%;
+  cursor: pointer;
+  border: none;
+  border-radius: 10px;
+}
+.search::placeholder {
+  font-size: 13px;
+  text-align: left;
+}
+
+.arrow {
+  background-color: black;
+  position: absolute;
+  padding: 13.5px;
+  padding-bottom: 14.8px;
+  z-index: 1;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  display: inline-flex;
+  right: 23.9%;
+  cursor: pointer;
+}
+.arrow:active {
+  background-color: rgb(70, 69, 69);
+}
+
+.details {
+  width: 80%;
+  height: 40%;
+  border-radius: 10px;
+  margin: auto;
+  flex: 1;
+  margin-top: 30px;
+  padding: 20px;
+  background-color: white;
+  z-index: 1;
+  text-align: center;
+}
+.details__list {
+  text-align: center;
+  padding: 30px;
+  justify-content: space-between;
+  flex-direction: column;
+  list-style: none;
+  display: inline-block;
+}
+.border {
+  border-right: 1.5px solid rgba(0, 0, 0, 0.2);
+}
+h4 {
+  font-size: 10px;
+  font-weight: 700;
+  padding-bottom: 10px;
+  letter-spacing: 2px;
+  color: rgba(0, 0, 0, 0.4);
+}
+p {
+  font-weight: 700;
+  font-size: 21px;
+  padding-right: 10px;
+}
+/* 
+@media (max-width: 1400px) {
+  .heading {
+    height: 32vh;
+  }
+  .search {
+    width: 90%;
+    padding: 15px;
+  }
+  .search::placeholder {
+    font-size: 20px;
+  }
+  .arrow {
+    padding: 20px;
+    right: 3.5%;
+  }
+  .details {
+    width: 75%;
+  }
+} */
+@media (max-width: 1200px) {
+  .heading {
+    height: 40vh;
+  }
+  .details {
+    width: 100%;
+  }
+  .details__list p {
+    font-size: 15px;
+  }
+  .arrow {
+    right: 2%;
+  }
+  .details {
+    width: 87%;
+  }
+}
+
+@media (max-width: 1000px) {
+  .heading {
+    height: 30vh;
+  }
+  .title {
+    font-size: 40px;
+  }
+  .search {
+    width: 95%;
+    padding: 20px;
+  }
+  .arrow {
+    top: 0;
+    padding: 24px;
+    right: -1.5%;
+  }
+  .details {
+    height: 85%;
+  }
+  .details__list {
+    text-align: center;
+    margin: auto;
+    width: 100%;
+    padding: 10px;
+  }
+  .border {
+    border: none;
+  }
+}
+@media (max-width: 700px) {
+  .heading {
+    height: 45vh;
+  }
+  .title {
+    font-size: 29px;
+    padding: 20px;
+  }
+  .search {
+    width: 90%;
+    padding: 20px;
+  }
+  .arrow {
+    top: 0;
+    padding: 24px;
+    right: -4%;
+  }
+  .details {
+    height: 80%;
+    border-radius: 20px;
+    width: 75%;
+  }
+  .details__list {
+    padding: 8px;
+    text-align: center;
+    width: 95%;
+    margin: auto;
+  }
+  .border {
+    border: 0;
+  }
+  h4 p {
+    font-weight: 900;
+  }
+}
+
+#map {
+  z-index: -1;
+  flex: 1;
+  height: 100vh;
+  background-color: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 0.4),
+    rgba(0, 0, 0, 0.6)
+  );
+}
+.leaflet-popup .leaflet-popup-content-wrapper {
+  background-color: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 0.4),
+    rgba(0, 0, 0, 0.6)
+  );
+  color: #131313;
+  border-radius: 5px;
+  padding-right: 0.7rem;
+}
+
+.leaflet-marker {
+  color: #131313;
+}
