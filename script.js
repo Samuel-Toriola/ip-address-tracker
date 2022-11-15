@@ -16,6 +16,8 @@ const whereAmI = async function (ip = "") {
     );
     const data = await res.json();
     console.log(data);
+    if (!data.isp)
+      throw new Error("Use a generalized Ip address, Like a state or country");
     if (!res.ok) throw new Error("Problem getting data from Ip ");
 
     const html = `
