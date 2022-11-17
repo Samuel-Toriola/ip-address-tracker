@@ -15,7 +15,7 @@ const whereAmI = async function (ip = "") {
       `https://geo.ipify.org/api/v2/country,city?apiKey=at_iV6a6Z9rMCmQ4SRPVzsUHv5hJeZdJ&ipAddress=${ip}`
     );
     const data = await res.json();
-    console.log(data);
+
     if (!data.isp) {
       setTimeout(function () {
         location.reload();
@@ -67,7 +67,6 @@ const whereAmI = async function (ip = "") {
       map._initContainer ? map.remove() : map;
     });
   } catch (err) {
-    console.log(err);
     alert(`Something went wrong ${err.message}`);
   }
 };
