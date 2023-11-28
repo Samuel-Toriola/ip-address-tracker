@@ -14,13 +14,13 @@ body {
 }
 .main {
   height: 100vh;
-  position: relative;
   display: grid;
-  grid-template-rows: 3fr 7fr;
+  grid-template-rows: 3.5fr 6.5fr;
 }
 
 .heading {
   width: 100%;
+  position: relative;
 
   background-image: url(images/pattern-bg.png);
 }
@@ -89,7 +89,15 @@ body {
   z-index: 1;
   text-align: center; */
   position: absolute;
+  background-color: white;
+  height: 13rem;
+  width: 80%;
+  z-index: 1000;
+  left: 0;
+  top: 50;
+  transform: translate(12%, 85%);
 }
+
 .details__list {
   text-align: center;
   padding: 30px;

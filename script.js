@@ -34,7 +34,7 @@ const whereAmI = async function (ip = "") {
 
     const html = `
 
-        <ul>
+        <ul details__lists>
           <li class="details__list border">
             <h4>IP ADDRESS</h4>
             <p id="ip">${data.ip}</p>
