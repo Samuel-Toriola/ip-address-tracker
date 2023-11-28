@@ -2,11 +2,17 @@
 const input = document.querySelector(".search");
 const submit = document.querySelector(".arrow");
 const mapDiv = document.querySelector("#map");
+const form = document.querySelector(".input__field");
 // const ipAddress = document.querySelector("#ip");
 const details = document.querySelector(".details");
 
-submit.addEventListener("click", function () {
+submit.addEventListener("click", function (e) {
+  e.preventDefault();
   input.value ? whereAmI(input.value) : whereAmI();
+});
+
+form.addEventListener("click", function (e) {
+  e.preventDefault();
 });
 
 const whereAmI = async function (ip = "") {
