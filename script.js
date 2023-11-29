@@ -8,7 +8,13 @@ const details = document.querySelector(".details");
 
 submit.addEventListener("click", function (e) {
   e.preventDefault();
-  input.value ? whereAmI(input.value) : whereAmI();
+  if (input.value) {
+    whereAmI(input.value);
+    input.value = "";
+  } else {
+    whereAmI();
+    input.value = "";
+  }
 });
 
 form.addEventListener("click", function (e) {
@@ -21,7 +27,6 @@ const whereAmI = async function (ip = "") {
       `https://geo.ipify.org/api/v2/country,city?apiKey=at_dyNYUy1rsEkE1IRVN2xo5M2t5I3il&ipAddress=${ip}`
     );
     const data = await res.json();
-    console.log(data);
 
     if (!data.isp) {
       setTimeout(function () {
