@@ -35,13 +35,8 @@ const whereAmI = async function (ip = "") {
 
     const html = `
 
-<<<<<<< HEAD
           
           <li class="details__list ">
-=======
-        <ul details__lists>
-          <li class="details__list border">
->>>>>>> 669a5dea8da09faba33d7fef0d802557798dc3d0
             <h4>IP ADDRESS</h4>
             <p id="ip">${data.ip}</p>
           </li>
