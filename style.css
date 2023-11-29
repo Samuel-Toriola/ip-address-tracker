@@ -117,12 +117,15 @@ body {
   height: 120%;
   background-color: rgba(0, 0, 0, 0.2);
   position: absolute;
-  right: -35%;
+  right: -10%;
   top: 10%;
 }
 .details__list:last-child::after {
   height: 0;
   width: 0;
+}
+.details__list:nth-child(3)::after {
+  right: -40%;
 }
 
 /* .border {
